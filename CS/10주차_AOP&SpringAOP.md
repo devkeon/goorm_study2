@@ -4,7 +4,7 @@
 ### OOP를 통한 AOP 이해
  객체 지향 프로그래밍(Object-oriented Programming, OOP)은 공통의 목적이 있는 데이터와 동작을 묶어 하나의 객체로 정의하는 것이다. 객체를 적극적으로 활용함으로써 기능을 재사용할 수 있는 것이 가장 큰 장점이다.
  
-**장점이 많은 OOP에도 한계점이 있다.** 비즈니스 로직을 기준으로 분리된 클래스에 부가기능(ex. 로깅, 트랙젝션, DB연결)의 소스코드가 중복되어 존재하게 된다.
+**장점이 많은 OOP에도 한계점이 있다.** 비즈니스 로직을 기준으로 분리된 클래스에 부가기능(ex. 로깅, 트랙젝션, 보안 등)의 소스코드가 중복되어 존재하게 된다.
 
 AOP는 비즈니스 로직은 핵심 관심사(core concern) 부가기능은 횡단 관심사(cross-cutting concern)로 해석한다. 
 즉, **비즈니스 로직과 상관 없는 부가기능을 분리하여 모듈화 하는 것을 AOP**라고 한다.
@@ -48,8 +48,8 @@ AspectJ는 기본적으로 이클립스에서 확장 기능을 추가하고 그 
 
 Spring AOP에선 기본적으로 두 가지 방식을 통해 Aspect를 구현할 수 있다.
 
-1.  [XML(스키마 기반 접근)](https://docs.spring.io/spring/docs/4.3.15.RELEASE/spring-framework-reference/html/aop.html#aop-schema)
-2.  [@AspectJ(어노테이션 기반 접근)](https://docs.spring.io/spring/docs/4.3.15.RELEASE/spring-framework-reference/html/aop.html#aop-ataspectj)
+1.  XML(스키마 기반 접근
+2.  @AspectJ(어노테이션 기반 접근)
 
 이 Aspect 모듈은 핵심 모듈에 횡단 코드를 적용하기 위한 최종 목적을 띄고, 횡단 모듈의 관리 유용성을 증가시키기 위한 횡단 관심사의 집합체다. 이 때문에 Aspect에는 횡단 코드와 이 코드가 어디서 언제 적용할지 구현해야 한다.
 
@@ -149,7 +149,7 @@ AOP는 특정 JoinPoint에 Advice하여 핵심기능과 횡단기능이 교차�
 ![img](https://gmoon92.github.io/md/img/aop/proxy3.png)
 
 ## 마무리
-AOP는 DI, IOC와 같은 스플링을 대표하는 3가지 요소 중 하나지만 가장 마지막에 공부할 것을 추천한다. Proxy방식에 대한 추가적인 공부가 더 필요하며, 예제에 대한 중요도 또한 높다. 다음 발표는 DI/IOC가 나왔으면 좋겠다.
+AOP는 DI, IOC와 같은 스플링을 대표하는 3가지 요소 중 하나지만 가장 마지막에 공부할 것을 추천한다. Proxy방식에 대한 추가적인 공부가 더 필요하며, 예제에 대한 중요도 또한 높다. 다음 발표는 DI/IOC나 프록시를 추천한다.
 ## 참고
 -   Blog
     -   [Spring-DOC : 11. Aspect Oriented Programming with Spring](https://docs.spring.io/spring/docs/4.3.15.RELEASE/spring-framework-reference/html/aop.html)
