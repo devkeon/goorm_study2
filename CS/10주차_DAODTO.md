@@ -74,7 +74,7 @@ MVC 패턴에 대해서도 간단히 알고 있는 것이 좋을 것같다.
 - 값 자체를 표현
 - getter/setter 외의 로직을 가질 수 있음
 
-![img1.png](/assets/img1.png)
+![img1.png](assets/img1.png)
 
 <br/>
 
