@@ -18,7 +18,7 @@ CPU 스케줄링은 한정된 CPU 자원을 적절한 기준에 따라 처리될
 스케줄링 결정은 다음과 같이 4가지 상황에서 발생한다. 스케줄링 결정은 프로세서에서 실행되는 태스크를 교체하는 것 뿐 아니라, 대기하고 있는 태스크들의 상태에 변화를 주는 것도 포함한다.
 
 <img src="https://mblogthumb-phinf.pstatic.net/MjAyMzAzMzBfMTY2/MDAxNjgwMTU5MTY4NzQz.2pVvhPNNw-1EChG_3uQ-MkFXO4GCZ9e0Nez2bJvAhCkg.6D-6csQAD49JMtjiDmDJ14txc8nagUDR7bPQcbURXyQg.PNG.kks227/3-2.png?type=w800">
-
+<br>
 **11.1.** 프로세스의 상태와 그 이동을 나타낸 FSM
 
 1. 프로세스가 실행 상태에서 대기 상태로 전환될 때 (I/O 요청 혹은 wait() 호출 등)
