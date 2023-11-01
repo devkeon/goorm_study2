@@ -1,5 +1,8 @@
-n = int(input())
-m = int(input())
+import sys
+read = sys.stdin.readline
+
+n = int(read())
+m = int(read())
 xm, ym = 0, 0
 
 snail = [[0 for i in range(1, n+1)] for _ in range(1, n+1)]

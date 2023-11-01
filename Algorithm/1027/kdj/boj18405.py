@@ -1,8 +1,10 @@
+import sys
 import copy
+read = sys.stdin.readline
 
-n, k = map(int, input().split())
-tube = [list(map(int, input().split())) for _ in range(n)]
-s, x, y = map(int, input().split())
+n, k = map(int, read().split())
+tube = [list(map(int, read().split())) for _ in range(n)]
+s, x, y = map(int, read().split())
 
 test_tube = copy.deepcopy(tube)
 dx=[0,0,-1,1]
