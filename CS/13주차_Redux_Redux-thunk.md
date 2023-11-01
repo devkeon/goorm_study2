@@ -19,7 +19,8 @@
 - 디버그 가능: Redux DevTools와 같은 도구를 사용하여 시간 여행 디버깅 가능.
 - 생태계 & 커뮤니티: 미들웨어, 통합, 강력한 커뮤니티 지원.
 
-![Untitled](Redux%20+%20Redux%20Thunk%20304cbb96279e4f6388f9712f9a4c28cd/Untitled.png)
+<img src="https://childevnote.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Ffdc39a70-7b2a-428d-9a94-c955d198c2d5%2Ff20ab565-2b9a-44e4-9fc7-dd15bb0452c3%2FUntitled.png?table=block&id=80648114-064d-4322-a1c1-9821848f0fa9&spaceId=fdc39a70-7b2a-428d-9a94-c955d198c2d5&width=770&userId=&cache=v2"/>
+
 
 **기존 React 방식 대로라면**
 
@@ -34,11 +35,13 @@
 - redux를 사용하여 보관한 상태를 변경시키는 수정 방법을 미리 정의해놓고, 각 컴포넌트들은 직접 상태를 변경시키는 것이 아니라 수정해달라는 요청만 보내서 상태를 변경한다.
 - 그렇게 되면 상태를 수정하는 곳이 하나밖에 없기 때문에 갑자기 상태 값 변경에 문제가 생겼을 때 추적하기가 용이하다.
 
-![Untitled](Redux%20+%20Redux%20Thunk%20304cbb96279e4f6388f9712f9a4c28cd/Untitled%201.png)
+<img src="https://childevnote.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Ffdc39a70-7b2a-428d-9a94-c955d198c2d5%2F07c16d7a-11be-47ae-817e-bf798e6dd5bd%2FUntitled.png?table=block&id=5c8aef0c-f6b5-405a-812c-318103403208&spaceId=fdc39a70-7b2a-428d-9a94-c955d198c2d5&width=580&userId=&cache=v2" />
+
 
 ### Redux 기본용어
 
-![image.gif](Redux%20+%20Redux%20Thunk%20304cbb96279e4f6388f9712f9a4c28cd/image.gif)
+<img src="https://file.notion.so/f/f/fdc39a70-7b2a-428d-9a94-c955d198c2d5/370039de-4665-4372-87d2-e722334644d0/image.gif?id=209efe59-897b-4728-be4a-2a1d0a1bdf14&table=block&spaceId=fdc39a70-7b2a-428d-9a94-c955d198c2d5&expirationTimestamp=1698904800000&signature=biJFQLWXRcJke_M2C13tuxoP0MCQEsfgGXjZ5cHGI6s"/>
+
 
 **Store**
 
@@ -105,7 +108,7 @@ const actionCreator = (payload) => ({action: 'ACTION', payload});
 $ yarn add redux-thunk //설치
 ```
 
-## ****`index.js`****
+## `index.js`
 
 ```jsx
 import React from 'react';
@@ -134,7 +137,7 @@ ReactDOM.render(
 
 리덕스 thunk를 사용하려면 store를 생성할 때 redux-thunk 미들웨어를 적용해주어야 한다. 
 
-## ****`counter.js`****
+## `counter.js`
 
 ```jsx
 // 액션 타입
@@ -167,7 +170,7 @@ export default function counter(state = initialState, action) {
 }
 ```
 
-## `C****ounterContainer.js****`
+## `CounterContainer.js`
 
 ```jsx
 import React from 'react';
@@ -194,7 +197,8 @@ function CounterContainer() {
 export default CounterContainer;
 ```
 
-![LSXLv2C.gif](Redux%20+%20Redux%20Thunk%20304cbb96279e4f6388f9712f9a4c28cd/LSXLv2C.gif)
+<img src="https://file.notion.so/f/f/fdc39a70-7b2a-428d-9a94-c955d198c2d5/b363abe0-c00b-4bbd-8aaa-6c360666cf94/LSXLv2C.gif?id=b679408d-dd28-4ec1-a5e9-a4324d3f9cf9&table=block&spaceId=fdc39a70-7b2a-428d-9a94-c955d198c2d5&expirationTimestamp=1698904800000&signature=mNhW6taLI5z3bnPjfVwh6Oy_5r-gjvwENEZZctqh4u8"/>
+
 
 ### **Thunk Use Cases**
 
